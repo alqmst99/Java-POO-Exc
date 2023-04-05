@@ -15,7 +15,7 @@ public class nameProduct {
         this.price = price;
     }
 
-  //Getters & Setters (cosultas de peticion (get) y consulta de ingreso (set)
+  //Getters & Setters (cosultas de peticion (get) y consulta de ingreso (set))
     public String getName() {
         return name;
     }

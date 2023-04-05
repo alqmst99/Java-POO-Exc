@@ -15,24 +15,28 @@ public class Mavenproject1 {
 
     
     public static void main(String[] args) {
-      nameProduct  np = new nameProduct();
-        Scanner sc= new Scanner(System.in);
+      nameProduct  np = new nameProduct();//crecion de objeto 
+        Scanner sc= new Scanner(System.in); // creacion de ingresp de datos
+        //declaracion de las variables
       int c= 0; 
        int  i =0;
       double b=0.0;
       String a="";
-       while(i<6){
+      //estructura iterada para el ingreso de datos
+       while(i<6){ //sentencia while con contador
+           //ingreso de datos
             System.out.println("ingrese el nombre del producto: ");
         a= sc.next();
-      np.setName(a);
+      np.setName(a);//guardado en el objeto
       System.out.println("ingrese el precio del producto: ");
         b= sc.nextDouble();
       np.setPrice(b);
       System.out.println("ingrese el Stock del producto: ");
         c= sc.nextInt();
       np.setStock(c);
+      //impresion de los datos cargados
         System.out.println(np.getName()+ " price: " + np.getPrice()+ " stock: " + np.getStock());
-        i +=1;
+        i +=1;//suma el contador
        }
         
     }}
